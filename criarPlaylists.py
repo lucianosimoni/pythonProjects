@@ -39,7 +39,7 @@ def exibirMusica(idDaMusica): #EXIBE APENAS A MUSICA DO ID
 def criarPlaylist():
     nomePlaylist = input('Digite o nome da sua playlist: ')
     idMusicas = input('Digite separado por virgulas os IDs das musicas que quer adicionar: ')
-    idMusicasSplited = idMusicas.split(",")
+    idMusicasSplited = idMusicas.split(',')
     playlists[nomePlaylist] = idMusicasSplited #Cria um novo dicionario
 
 def exibirPlaylist():

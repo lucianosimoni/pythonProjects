@@ -23,7 +23,7 @@ def cadastroDemusic():
     titulo = input('Digite o titulo da musica: ')
     artista = input('Digite o nome do Artista: ')
     genero = input('Digite o genero: ')
-    duracao = input('Digite quanto tempo tem a musica: ') #"3:23"
+    duracao = input('Digite quanto tempo tem a musica: ')
     listinha = [titulo, artista, genero, duracao]
     if len(musicas) == 0:
         musicas[0] = listinha
@@ -51,6 +51,7 @@ def calcularTempo(listaDeIDS):
         minutosTotais = minutosTotais%60
         horasTotais += 1
     print("Tempo da playlist: ", horasTotais,":",minutosTotais,":",segundosTotais," ==/==/==/==/==/== \n ")
+
 def filtrarMusicas():
   #Artista é o IDX 1
   #Genero é o IDX 2
@@ -90,7 +91,7 @@ def filtrarMusicas():
 
 def exibirMusica():
     idsDasMusicas = []
-    print("Exibindo playlist Spotify.")
+    print(" \nExibindo playlist Spotify.")
     
     for i in musicas:
         idsDasMusicas.append(i)
