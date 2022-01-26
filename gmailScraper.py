@@ -15,11 +15,11 @@ print(imap.login(username, password)) # authenticate
 def fetchEmails(numToFetch):
     #numToFetch = number of top emails to fetch
     
-    status, messages = imap.select("INBOX")
+    messages = imap.select("INBOX")
     messages = int(messages[0]) # total number of emails
 
     for i in range(messages, messages - numToFetch, -1): #Loop through the first 3
-        res, msg = imap.fetch(str(i), "(RFC822)") # fetch the email message by ID
+        msg = imap.fetch(str(i), "(RFC822)") # fetch the email message by ID
         
         for response in msg:
             if isinstance(response, tuple):
