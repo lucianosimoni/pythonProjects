@@ -1,4 +1,4 @@
-fraseIni = input("Texto inicial: ") #Pega o input do user
+fraseIni = input("Texto inicial: ") #Pega o input do user e separa cada char em uma Array
 
 def splitChar(frase): #Funcao semelhante ao SPLIT
     arrayFin = [] #Nossa variavel de retorno (print)
